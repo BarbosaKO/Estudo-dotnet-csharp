@@ -1,0 +1,20 @@
+$ dotnet new --list
+$ dotnet new tipo-de-projeto -o PastaMeu.Projeto
+
+1-Criação das classes com Getters e Setters numa pasta chamada Entities
+
+2-Criação dos Controllers na pasta de mesmo nome, pode apagar os dados do arquivo e usar o modelo 
+do snippet 'api_controller' e lá colocamos as funções de Get,Post,Put e etc. Nas funções de Post e
+Put(Update de dados), usar um model como parametro no estilo '(nomeModel model)'
+
+3-Criação dos Models na pasta de mesmo nome, os Models são na verdade records para gravar os 
+objetos no banco de dados.
+
+Como instalar novos pacotes:
+$ dotnet tool install --global pacote
+Aqui eu instalei de forma global, ou seja, nosso projeto atual e outros irão acessar ele em:
+    $HOME/.dotnet/tools
+
+Criar chaves(variaveis de ambiente), para o ambiente de desenvolvimento:
+    $ dotnet user-secrets init
+    $ dotnet user-secrets set "chave" "valor"
